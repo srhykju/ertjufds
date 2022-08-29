@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dcufhn
+  name: fwddtuit
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dcufhn
+      app: fwddtuit
   template:
     metadata:
       labels:
-        app: dcufhn
+        app: fwddtuit
     spec:
       containers:
       - image: okteto.dev/dcufhn:latest
-        name: dcufhn
+        name: fwddtuit
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "c63de508-0669-11ed-b939-0242ac120002"
+          value: "dc87c4e5-c206-40c9-bd68-633cbc7f784f"
         - name: Vless_Path
-          value: "/vl5547dh"
+          value: "/fuuded"
         - name: Vmess_UUID
-          value: "c63de508-0669-11ed-b939-0242ac120002"
+          value: "dc87c4e5-c206-40c9-bd68-633cbc7f784f"
         - name: Vmess_Path
-          value: "/vm6xys"
+          value: "/fuuded"
         - name: Share_Path
           value: "/v2link"
