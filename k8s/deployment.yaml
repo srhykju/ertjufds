@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dcufhn
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dcufhn
+  template:
+    metadata:
+      labels:
+        app: dcufhn
+    spec:
+      containers:
+      - image: okteto.dev/dcufhn:latest
+        name: dcufhn
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: Site
+          value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
+        - name: Vless_UUID
+          value: "c63de508-0669-11ed-b939-0242ac120002"
+        - name: Vless_Path
+          value: "/vl5547dh"
+        - name: Vmess_UUID
+          value: "c63de508-0669-11ed-b939-0242ac120002"
+        - name: Vmess_Path
+          value: "/vm6xys"
+        - name: Share_Path
+          value: "/v2link"
