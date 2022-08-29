@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dcufhn
+  name: fwddtuit
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "dcufhn"
+  - name: "fwddtuit"
     port: 8080
   selector:
-    app: dcufhn
+    app: fwddtuit
